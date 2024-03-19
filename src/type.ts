@@ -1,4 +1,4 @@
-export interface SchemaOffreMaison {
+export interface SchemaFilm {
     id?: string; 
     nomMaison: string;
     prix: number;
@@ -9,9 +9,3 @@ export interface SchemaOffreMaison {
     adresse: string;
     surface: string;
   }
-
-export interface SchemaQuartier [
-  id?: string;
-  nom_quartier: string; 
-]
-  
