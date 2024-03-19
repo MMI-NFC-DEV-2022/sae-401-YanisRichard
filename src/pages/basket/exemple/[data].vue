@@ -6,4 +6,4 @@ const route=useRoute("/basket/exemple/[data]")
 </script>
 <template>
   <FormSvg :data="JSON.parse(route.params.data)" />
-</template>../../../components/FormFilm.vue
+</template>
