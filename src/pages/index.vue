@@ -1,8 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import BasketProfil from "@/components/BasketProfil.vue";
 import type { Basket } from "@/types";
-import Id from "./quartiers/edit/[[id]].vue";
 const exemples: Basket[] =[
 {
   id:"1",

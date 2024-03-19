@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import FormBasket from '@/components/FormBasket.vue';
-import FormImages from '@/components/FormImages.vue';
+
+import FormBasket from '@/components/FormFilm.vue';
 
 </script>
 
