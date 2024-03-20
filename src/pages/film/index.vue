@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AfficheFilm from '@/components/AfficheFilm.vue';
-import type { SchemaFilm } from '@/types';
+import { SchemaFilm } from '@/type';
 import { supabase } from '@/supabase';
  
 console.log(supabase);

@@ -13,7 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@formkit/vue": "^1.5.5",
+    "@formkit/vue": "^1.6.0",
     "@headlessui/tailwindcss": "^0.2.0",
     "@headlessui/vue": "^1.7.19",
     "@supabase/supabase-js": "^2.39.7",

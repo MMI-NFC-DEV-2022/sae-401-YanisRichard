@@ -110,7 +110,7 @@ defineProps<SchemaFilm>();
           ></path>
         </svg>
         <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">
-          {{ Classification }}</p>
+          {{ classification }}</p>
       </div>
       <div class="flex justify-center items-center flex-grow relative gap-2">
         <svg
@@ -200,7 +200,6 @@ defineProps<SchemaFilm>();
             </clipPath>
           </defs>
         </svg>
-        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">{{ surface }}</p>
       </div>
     </div>
   </div>
