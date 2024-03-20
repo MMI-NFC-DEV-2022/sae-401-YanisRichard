@@ -7,12 +7,7 @@
   <section>
     <h1 class="text-2xl">Home</h1>
 
-    <p>Liste des films</p>
-  
-    <ul>
-      <li>Star Wars</li>
-      <li>Alien</li>
-    </ul>
+    <p>Bienvenue dans le home</p>
 
 
 
