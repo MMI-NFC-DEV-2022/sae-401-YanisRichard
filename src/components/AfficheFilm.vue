@@ -2,7 +2,7 @@
 import { defineProps } from 'vue';
 import type { SchemaFilm } from '@/type'
 
-defineProps<SchemaOffreMaison>();
+defineProps<SchemaFilm>();
 
 </script>
 
@@ -30,7 +30,7 @@ defineProps<SchemaOffreMaison>();
           class="flex justify-start items-end flex-grow-0 flex-shrink-0 w-[197.07px] relative gap-0.5"
         >
           <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-indigo-500">
-            ${{ prix }}
+            ${{ nom }}
           </p>
           <p class="flex-grow-0 flex-shrink-0 w-[58px] h-8 text-base text-left text-gray-500">
             /month
@@ -39,7 +39,7 @@ defineProps<SchemaOffreMaison>();
         <p
           class="flex-grow-0 flex-shrink-0 w-[299px] h-8 text-2xl font-semibold text-left text-gray-900"
         >
-          {{nomMaison}}
+          ${{ annee_sortie }}
         </p>
       </div>
       <svg
@@ -63,7 +63,7 @@ defineProps<SchemaOffreMaison>();
       </svg>
     </div>
     <p class="self-stretch flex-grow-0 flex-shrink-0 w-[347px] text-base text-left text-gray-500">
-      {{ adresse }}
+      {{ duree }}
     </p>
     <svg
       width="347"
@@ -109,7 +109,8 @@ defineProps<SchemaOffreMaison>();
             stroke-linejoin="round"
           ></path>
         </svg>
-        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">{{ nbrChambres }}</p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">
+          {{ Classification }}</p>
       </div>
       <div class="flex justify-center items-center flex-grow relative gap-2">
         <svg
@@ -157,7 +158,8 @@ defineProps<SchemaOffreMaison>();
             </clipPath>
           </defs>
         </svg>
-        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600"> {{ nbrSDB }}</p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600"> 
+          {{ synopsis }}</p>
       </div>
       <div class="flex justify-end items-center flex-grow relative gap-2">
         <svg

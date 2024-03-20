@@ -1,51 +1,44 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import AfficheMaison from '@/components/AfficheMaison.vue';
-import { type SchemaOffreMaison } from '@/type';
+import AfficheFilm from '@/components/AfficheFilm.vue';
+import { type SchemaFilm } from '@/type';
 
-const maMaison:SchemaOffreMaison = {
-    nomMaison: "Maison",
-    prix: 1000,
-    adresse: '123 rue',
-    nbrChambres: 3,
-    nbrSDB: 2 ,
-    surface: "30x40m²",
-    favori: true,
+const monFilm:SchemaFilm = {
+    nom: "Alien",
+    annee_sortie: 1979,
+    duree: "1h57",
+    classification:"12 ans et +" ,
+    synopsis: "Ce film parle d'un alien qui tue des gens dans l'espace." ,
     image: 'pexels-binyamin-mellish-106399-1.jpg',
 };
 
-const maisons = [
+
+const films = [
     {
-    nomMaison: "Maison1",
-    prix: 2000,
-    adresse: '111 rue',
-    nbrChambres: 4,
-    nbrSDB: 2 ,
-    surface: "20x80m²",
-    favori: false,
+    nom: "Avengers",
+    annee_sortie: 2012,
+    duree: "1h45",
+    classification:"10 ans et +" ,
+    synopsis: "Ce film parle d'un groupe de super-héros qui doivent sauver le monde." ,
     image: 'pexels-binyamin-mellish-106399-1.jpg',
     },
 
     {
-    nomMaison: "Maison2",
-    prix: 25000,
-    adresse: '222 rue',
-    nbrChambres: 8,
-    nbrSDB: 3 ,
-    surface: "30x80m²",
-    favori: true,
-    image: 'pexels-binyamin-mellish-106399-1.jpg', 
+    nom: "Fantasia 2000",
+    annee_sortie: 2012,
+    duree: "1h30",
+    classification:"Tous publics" ,
+    synopsis: "Ce film parle d'une souris de dessin animé qui va chanter et danser au gré de musiques classiques." ,
+    image: 'pexels-binyamin-mellish-106399-1.jpg',
     },
 
     {
-    nomMaison: "Maison3",
-    prix: 350000,
-    adresse: '333 rue',
-    nbrChambres: 10,
-    nbrSDB: 4 ,
-    surface: "40x80m²",
-    favori: true,
-    image: 'pexels-binyamin-mellish-106399-1.jpg', 
+    nom: "Saw",
+    annee_sortie: 2004,
+    duree: "1h45",
+    classification:"16 ans et +" ,
+    synopsis: "Ce film parle d'un photographe et d'un médecin piègés dans une salle de bain par un tueur en série." ,
+    image: 'pexels-binyamin-mellish-106399-1.jpg',
     },
 
 ];
@@ -54,6 +47,6 @@ const maisons = [
 
 <template>
     <h1>On passe les valeurs en objet avec v-bind</h1>
-
-    <AfficheMaison v-for="maison of maisons" v-bind="maison" :key="maison.nomMaison"/>
+    <AfficheFilm v-bind="monFilm"/>
+    <AfficheFilm v-for="film of films" v-bind="film" :key="film.nom"/>
 </template>

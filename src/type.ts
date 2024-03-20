@@ -1,11 +1,9 @@
 export interface SchemaFilm {
     id?: string; 
-    nomMaison: string;
-    prix: number;
-    favori: boolean;
+    nom: string;
+    annee_sortie: number;
+    duree: string;
+    classification: string;
     image: string;
-    nbrChambres: number;
-    nbrSDB: number;
-    adresse: string;
-    surface: string;
+    synopsis: string;
   }
