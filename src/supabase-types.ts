@@ -130,6 +130,7 @@ export type Database = {
           duree: string | null
           id: number
           id_collection: number | null
+          image_film: string | null
           nom: string | null
           synopsis: string | null
         }
@@ -140,6 +141,7 @@ export type Database = {
           duree?: string | null
           id?: number
           id_collection?: number | null
+          image_film?: string | null
           nom?: string | null
           synopsis?: string | null
         }
@@ -150,6 +152,7 @@ export type Database = {
           duree?: string | null
           id?: number
           id_collection?: number | null
+          image_film?: string | null
           nom?: string | null
           synopsis?: string | null
         }
@@ -259,6 +262,30 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      Support: {
+        Row: {
+          created_at: string
+          id: number
+          image_support: string | null
+          lien_support: string | null
+          nom_support: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          image_support?: string | null
+          lien_support?: string | null
+          nom_support?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          image_support?: string | null
+          lien_support?: string | null
+          nom_support?: string | null
+        }
+        Relationships: []
       }
       User: {
         Row: {

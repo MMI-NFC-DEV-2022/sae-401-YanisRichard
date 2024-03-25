@@ -39,7 +39,7 @@ const films = [
 </script>
 
 <template>
-    <h1>On passe les valeurs en objet avec v-bind</h1>
+    <h1>Affichage des films en local</h1>
     <AfficheFilm v-bind="monFilm"/>
     <AfficheFilm v-for="film of films" v-bind="film" :key="film.nom"/>
 </template>

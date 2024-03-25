@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AfficheFilm from '@/components/AfficheFilm.vue';
-import { SchemaFilm } from '@/type';
+
 import { supabase } from '@/supabase';
  
 console.log(supabase);
@@ -14,7 +14,7 @@ console.log("les film dans la liste des film (/film) :", tableaufilm);
 </script>
 
 <template>
-    
+    <h1>Affichage des films sur supabase</h1>
     <div class="grid grid-cols-3 gap-4">
         <div v-for="film in tableaufilm" :key="film.id">
             <RouterLink :to="{name:'/film/[id]', params: { id:film.id}}">
