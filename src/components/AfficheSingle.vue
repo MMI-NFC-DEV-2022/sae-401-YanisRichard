@@ -5,10 +5,13 @@ import { supabase } from '@/supabase';
 const route = useRoute('/film/edit/[[id]]')
 import type {Database, Tables} from '@/supabase-types'
 import type { SchemaFilm } from '@/type'
+import type { SchemaCoffret } from '@/type'
 import type { SchemaSupport } from '@/type'
 
+interface FicheFilm extends SchemaFilm, SchemaCoffret,  SchemaSupport{}
 
-defineProps<SchemaFilm>();
+defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<'Collection'>}>();
+
 </script>
 
 <template>
@@ -20,7 +23,7 @@ defineProps<SchemaFilm>();
       <p class="pt-5">Durée du film: {{ duree }}</p>
       <p class="pt-5">Classification Européenne: {{ classification }}</p>
       <p class="pt-5 pb-5">Synopsis:  {{ synopsis }}</p>
-
+      <p class="pt-5 pb-5">Collection:  {{ Collection.nom_coffret }}</p>
     </div>
     
     

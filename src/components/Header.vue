@@ -8,10 +8,10 @@ import { RouterLink } from 'vue-router';
 <template>
     <header>
         <h1>SAE 401 Yanis RICHARD</h1>
-        <nav>
+        <nav class="flex -start-48">
             <RouterLink class="mr-20" to="/">Home</RouterLink>
             <RouterLink class="mr-20" to="/about">About</RouterLink> 
-            <RouterLink class="mr-20" to="/simple">Simple</RouterLink>
+            <RouterLink class="mr-20" to="/simple">Local</RouterLink>
             <RouterLink class="mr-20" to="/film">Films</RouterLink>
             <RouterLink class="mr-20" to="/login">login</RouterLink> 
         </nav>

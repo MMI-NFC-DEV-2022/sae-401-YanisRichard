@@ -14,7 +14,6 @@ defineProps<SchemaFilm>();
   <p class>{{ annee_sortie }}</p>
   <p class>{{ duree }}</p>
   <p class>{{ classification }}</p>
-  
 
 </div>
 

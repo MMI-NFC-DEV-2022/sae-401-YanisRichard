@@ -4,6 +4,14 @@
 # sae-401-YanisRichard
 link to the website on netlify: https://main--sae401-yanis-richard.netlify.app
 
+# fonctions du projet
+
+Affichage des films locals dans "Local"
+Affichage des films sur supabase dans "Films" et "Home"
+Login depuis github à la base de données supabase
+création de "cards" pour les films, en cliquant sur un film
+Informations du film affichées dans la card
+Affichage de la collection du film dans la Card
 
 
 # Help with VueJS

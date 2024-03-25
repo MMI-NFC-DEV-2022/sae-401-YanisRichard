@@ -11,8 +11,14 @@ export interface SchemaFilm {
   }
 
 export interface SchemaSupport {
-  id?: string;
-  nom_support: string;
-  image_support: string;
-  lien_support: string;
+    id?: string;
+    nom_support: string;
+    image_support: string;
+    lien_support: string;
+}
+
+export interface SchemaCoffret {
+    id?: string
+    nom_coffret: string;
+    lien_coffret: string;
 }

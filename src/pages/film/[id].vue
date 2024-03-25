@@ -3,15 +3,15 @@
 import { useRoute } from 'vue-router/auto';
 import { supabase } from '@/supabase';
 import AfficheSingle from '@/components/AfficheSingle.vue';
+import AfficheSupport from '@/components/AfficheSupport.vue';
 
 const route = useRoute('/film/[id]')
 
-const {data : film, error} = await supabase
+const {data : film, collection, error} = await supabase
     .from('Film')
     .select(`
         *,
         Collection(*)
-        Support(*)
         `
     )
     .eq('id', route.params.id)
@@ -44,7 +44,7 @@ id : {{ film.id_collection }}
 
     <div>
         <AfficheSingle v-bind="film" />
-        
+        <AfficheSupport v-bind="support" />
     </div>
 
 </template>
