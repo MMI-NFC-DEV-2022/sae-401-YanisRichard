@@ -36,6 +36,7 @@ defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<
         <ul>
           <li  v-for="unSupp of Support">
               {{ unSupp.nom_platform }}
+              <a :href="unSupp.lien_support">Lien </a>
           </li>
         </ul>
       </p>
