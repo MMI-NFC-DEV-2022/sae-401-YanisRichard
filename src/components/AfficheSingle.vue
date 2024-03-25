@@ -5,7 +5,7 @@ import { supabase } from '@/supabase';
 const route = useRoute('/film/edit/[[id]]')
 import type {Database, Tables} from '@/supabase-types'
 
-defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<'Collection'>} & {Collection:Tables<'Support'>}>();
+defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<'Collection'>} & {Support:Tables<'Support'>[]}>();
 
 
 </script>
@@ -29,5 +29,15 @@ defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<
         <p class="pt-5 pb-5">Collection: {{ Collection.nom_coffret }}</p>
         <a :href="Collection.lien_coffret" class="pt-5 pb-5 ml-11 text-blue-600">Acheter le coffret</a>
     </div>
-    
+
+    <div class="flex ml-10 mb-10" >
+      <p>
+        Supports: 
+        <ul>
+          <li  v-for="unSupp of Support">
+              {{ unSupp.nom_platform }}
+          </li>
+        </ul>
+      </p>
+    </div>
     </template>
