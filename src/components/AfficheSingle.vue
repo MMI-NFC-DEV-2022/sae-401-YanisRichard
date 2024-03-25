@@ -4,13 +4,9 @@ import { defineProps } from 'vue';
 import { supabase } from '@/supabase';
 const route = useRoute('/film/edit/[[id]]')
 import type {Database, Tables} from '@/supabase-types'
-import type { SchemaFilm } from '@/type'
-import type { SchemaCoffret } from '@/type'
-import type { SchemaSupport } from '@/type'
 
-interface FicheFilm extends SchemaFilm, SchemaCoffret,  SchemaSupport{}
+defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<'Collection'>} & {Collection:Tables<'Support'>}>();
 
-defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<'Collection'>}>();
 
 </script>
 
@@ -30,11 +26,8 @@ defineProps<Database['public']['Tables']['Film']['Insert'] & {Collection:Tables<
     </div>
 
     <div class="flex ml-10" >
-        <p class="pt-5 pb-5">Collection:  {{ Collection.nom_coffret }}</p>
+        <p class="pt-5 pb-5">Collection: {{ Collection.nom_coffret }}</p>
         <a :href="Collection.lien_coffret" class="pt-5 pb-5 ml-11 text-blue-600">Acheter le coffret</a>
     </div>
-
-    
-    
     
     </template>

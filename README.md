@@ -11,7 +11,8 @@ Affichage des films sur supabase dans "Films" et "Home"
 Login depuis github à la base de données supabase
 création de "cards" pour les films, en cliquant sur un film
 Informations du film affichées dans la card
-Affichage de la collection du film dans la Card
+Affichage de la collection du film dans la Card 
+Lien cliquable dans la card (vers un lien amazon par exemple)
 
 
 # Help with VueJS

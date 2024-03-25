@@ -269,21 +269,21 @@ export type Database = {
           id: number
           image_support: string | null
           lien_support: string | null
-          nom_support: string | null
+          nom_platform: string | null
         }
         Insert: {
           created_at?: string
           id?: number
           image_support?: string | null
           lien_support?: string | null
-          nom_support?: string | null
+          nom_platform?: string | null
         }
         Update: {
           created_at?: string
           id?: number
           image_support?: string | null
           lien_support?: string | null
-          nom_support?: string | null
+          nom_platform?: string | null
         }
         Relationships: []
       }
